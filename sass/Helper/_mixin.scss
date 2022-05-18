@@ -4,6 +4,14 @@
 //     font-size: $fs;
 //     font-weight: $fw;
 // }
+@mixin bgBlur($bg) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: $bg;
+    opacity: 0.6;
+}
 
 @mixin icon($colorIcon) {
     position: relative;
@@ -11,25 +19,38 @@
     height: 40px;
     margin-right: 10px;
     cursor: pointer;
-    .bgIcon{
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    opacity: 0.05;
-    border-radius: 2px;
+    .bgIcon {
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        opacity: 0.05;
+        border-radius: 2px;
     }
-    i{
+    i {
         position: absolute;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         left: 50%;
         color: $colorIcon;
     }
-    span{
+    span {
         position: absolute;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         left: 50%;
         color: $colorIcon;
+    }
+}
+// mixin maxWidth
+@mixin maxWidth($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+// mixin minWidth
+@mixin minWidth($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
     }
 }

@@ -1,0 +1,164 @@
+.tinTuc {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    &__top {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        &--content {
+            width: 40%;
+        }
+        i {
+            color: #e0a612;
+            padding-left: 20px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        .tinTuc-item {
+            padding: 25px;
+            &--bg {
+                position: relative;
+                .bg-blur {
+                    @include bgBlur(linear-gradient(180deg, rgba(0, 0, 0, 0.66) 4.17%, #000000 94.57%));
+                }
+            }
+            &--content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                padding-bottom: 0;
+                z-index: 20;
+                p {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #ffffff;
+                    margin-top: 10px;
+                }
+                h4 {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    letter-spacing: -0.05em;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                }
+                .icon {
+                    .bgIcon {
+                        background: #e0a612;
+                        opacity: 0.21;
+                        border-radius: 50% !important;
+                    }
+                    @include icon(#e0a612);
+                }
+            }
+        }
+        .tinTuc-item:first-of-type {
+            padding-left: 0;
+        }
+        .tinTuc-item:last-of-type {
+            padding-right: 0;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .tinTuc {
+        &__top {
+            &--content {
+                width: 60%;
+            }
+        }
+        padding-top: 80px;
+        padding-bottom: 80px;
+        &__bottom {
+            .tinTuc-item {
+                &--content {
+                    padding-bottom: 5px;
+                    p {
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .tinTuc {
+        &__bottom {
+            .tinTuc-item {
+                padding: 15px;
+                &--content {
+                    padding: 10px;
+                    p {
+                        margin-bottom: 5px;
+                        font-size: 13px;
+                        line-height: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .tinTuc {
+        &__top {
+            &--content {
+                h2 {
+                    font-size: 27px;
+                    line-height: 40px;
+                }
+                span{
+                    font-size: 15px;
+                }
+            }
+        }
+        &__bottom {
+            .tinTuc-item {
+                padding: 10px;
+                &--content {
+                    padding: 8px;
+                    p {
+                        margin-bottom: 5px;
+                        font-size: 13px;
+                        line-height: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .tinTuc {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__bottom {
+            flex-wrap: wrap;
+            .tinTuc-item {
+                width: 50%;
+                margin: auto;
+                padding: 10px;
+                &--content {
+                    padding: 8px;
+                    p {
+                        margin-bottom: 5px;
+                        font-size: 13px;
+                        line-height: 13px;
+                    }
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .tinTuc-item:first-of-type {
+                padding-left: 10px;
+            }
+            .tinTuc-item:last-of-type {
+                padding-right: 10px;
+            }
+        }
+    }
+}

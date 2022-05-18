@@ -1,5 +1,8 @@
 header {
     position: relative;
+    .bg-blur {
+        @include bgBlur(radial-gradient(142.4% 142.4% at 50% 64.38%, #000000 7.29%, #000000 100%));
+    }
     .header-content {
         position: absolute;
         top: 0;
@@ -11,6 +14,7 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 5px;
             &__left {
                 display: flex;
                 align-items: center;
@@ -26,6 +30,7 @@ header {
                 }
             }
         }
+
         .header-center {
             display: flex;
             align-items: center;
@@ -33,6 +38,7 @@ header {
             flex-direction: column;
             width: 100%;
             height: 60%;
+            margin-top: 210px;
             h3 {
                 font-family: "Lexend Deca";
                 font-style: normal;
@@ -44,14 +50,222 @@ header {
                 color: #ffffff;
             }
         }
-        .header-bottom{
+        .header-bottom {
             position: absolute;
             bottom: 10%;
-            i{
-                color: #FFFFFF;
+            i {
+                color: #ffffff;
                 opacity: 0.5;
                 margin-right: 20px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    header {
+        .header-content {
+            .header-center {
+                margin-top: 100px;
+                h3 {
+                    font-size: 55px;
+                }
+            }
+
+        }
+        .slick-dots{
+            margin-right: 30px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    header {
+        .header-content {
+            .header-center {
+                margin-top: 50px;
+                h3 {
+                    font-size: 45px;
+                    line-height: 70px;
+                }
+            }
+        }
+        .slick-dots{
+            margin-right: 30px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        .header-content {
+            .header-top {
+                &__left {
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 15px;
+                    }
+                }
+                &__right {
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .header-center {
+                margin-top: 25px;
+                h3 {
+                    font-size: 30px;
+                    line-height: 50px;
+                }
+            }
+            .header-bottom {
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .slick-dots{
+            margin-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 668px) {
+    header {
+        .header-content {
+            .header-top {
+                &__left {
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 15px;
+                    }
+                }
+                &__right {
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .header-center {
+                margin-top: 25px;
+                h3 {
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+                .btnPrimary {
+                    padding: 10px 20px;
+                    font-size: 13px;
+                }
+            }
+            .header-bottom {
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .slick-dots{
+            margin-right: 15px;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    header {
+        .header-content {
+            .header-top {
+                &__left {
+                    .icon {
+                        width: 25px;
+                        height: 25px;
+                        font-size: 13px;
+                    }
+                }
+                &__right {
+                    .icon {
+                        width: 25px;
+                        height: 25px;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .header-center {
+                margin-top: 15px;
+                h3 {
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+                .btnPrimary {
+                    padding: 10px 20px;
+                    font-size: 13px;
+                    margin-top: 10px;
+                }
+            }
+            .header-bottom {
+                i {
+                    margin-right: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+        .header-content {
+            .header-top {
+                &__left {
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 10px;
+                    }
+                }
+                &__right {
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 10px;
+                    }
+                }
+                img{
+                    width: 55%;
+                    margin: auto;
+                }
+            }
+
+            .header-center {
+                margin-top: 10px;
+                h3 {
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+                .btnPrimary {
+                    padding: 6px 15px;
+                    font-size: 13px;
+                    margin-top: 15px;
+                }
+            }
+            .header-bottom {
+                i {
+                    margin-right: 7px;
+                    font-size: 10px;
+                }
+            }
+        }
+        .slick-dots{
+            margin-right: 15px;
+        }
+        .slick-dots li button:before{
+            color: #FFFFFF;
+            width: 16px;
+            height: 16px;
         }
     }
 }

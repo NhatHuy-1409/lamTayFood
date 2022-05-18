@@ -1,0 +1,180 @@
+.sanPham-bg {
+    background-color: #f4f4f1;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.sanPham {
+    display: flex;
+    align-items: center;
+    &__left {
+        width: 40%;
+        padding-right: 140px;
+        i {
+            color: #e0a612;
+            padding-left: 20px;
+        }
+    }
+    &__right {
+        width: 60%;
+        position: relative;
+        .arrow-prev {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 12;
+            top: 50%;
+            left: -1.5%;
+            box-shadow: 0px 0px 10px rgba(4, 4, 4, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                color: #e0a612;
+            }
+        }
+        .arrow-next {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 12;
+            top: 50%;
+            box-shadow: 0px 0px 10px rgba(4, 4, 4, 0.05);
+            right: -1.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                color: #e0a612;
+            }
+        }
+        .sanPham__item {
+            padding: 15px;
+            .bgSPItem {
+                background: #ffffff;
+                padding: 15px;
+                border-radius: 5px;
+                height: 472px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &__head {
+                    p {
+                        width: 50px;
+                        height: 20px;
+                        background-color: #e0a612;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #000000;
+                        text-align: center;
+                        border-radius: 2px;
+                    }
+                }
+                &__middle {
+                    height: 285px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    img {
+                        margin: auto;
+                    }
+                }
+                &__bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    h3 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #000000;
+                    }
+                    p {
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #696969;
+                    }
+                    .icon {
+                        @include icon(#363636);
+                        margin-right: 0;
+                        .bgIcon {
+                            background: #f4f4f1;
+                            border-radius: 10px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// @media screen and (max-width: 1199px) {
+//     .sanPham {
+//     }
+// }
+@media screen and (max-width: 991px) {
+    .sanPham-bg {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .sanPham {
+        display: flex;
+        align-items: center;
+        &__left {
+            width: 40%;
+            padding-right: 60px;
+            p {
+                line-height: 32px;
+            }
+            h2 {
+                font-size: 36px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .sanPham-bg {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .sanPham {
+        display: block;
+        align-items: center;
+        &__left {
+            width: 100%;
+            padding-right: 0;
+
+            p {
+                line-height: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 27px;
+                line-height: 40px;
+                margin-top: 10px;
+            }
+            span{
+                font-size: 15px;
+            }
+        }
+        &__right {
+            width: 100%;
+
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .sanPham-bg {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,134 @@
+.gioiThieu {
+    display: flex;
+    align-items: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    &__left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding-right: 140px;
+        img {
+            padding: 10px;
+        }
+        .img-mobile {
+            display: none;
+        }
+    }
+    &__right {
+        width: 50%;
+
+        span {
+            font-family: "Lexend Deca";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 30px;
+            color: #000000;
+        }
+        i {
+            color: #e0a612;
+            padding-left: 20px;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .gioiThieu {
+        &__left {
+            padding-right: 80px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .gioiThieu {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        &__left {
+            padding-right: 80px;
+        }
+        &__right {
+            p {
+                line-height: 32px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .gioiThieu {
+        &__left {
+            padding-right: 50px;
+        }
+        &__right {
+            p {
+                line-height: 25px;
+            }
+            h2 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .gioiThieu {
+        &__left {
+            padding-right: 30px;
+        }
+        &__right {
+            p {
+                line-height: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 27px;
+                line-height: 40px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .gioiThieu {
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        &__left {
+            display: flex;
+            width: 100%;
+            padding-right: 0;
+            margin: 20px 0;
+            &--img {
+                // display: flex;
+                .img2 {
+                    display: none;
+                }
+            }
+            .img-mobile {
+                display: block;
+            }
+            img {
+                width: 100%;
+                padding: 5px;
+            }
+            div {
+                width: calc(100% / 3);
+            }
+        }
+        &__right {
+            width: 100%;
+            p {
+                line-height: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 27px;
+                line-height: 40px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

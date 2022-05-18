@@ -30,66 +30,77 @@
 
 <body>
     <header>
-        <div class="say__slick">
-            <div class="say__item">
+        <div class="header__slick">
+            <div class="header__item">
                 <img src="./asset/images/header1.jpg" alt="">
             </div>
-            <div class="say__item">
+            <div class="header__item">
                 <img src="./asset/images/header1.jpg" alt="">
             </div>
-            <div class="say__item">
+            <div class="header__item">
                 <img src="./asset/images/header1.jpg" alt="">
             </div>
         </div>
-        <div class="header-content container">
-            <div class="header-top">
-                <div class="header-top__left">
-                    <div class="icon">
-                        <div class="bgIcon"></div>
-                        <i class="fas fa-bars"></i>
+        <div class="bg-blur">
+
+        </div>
+        <div class="header-content ">
+            <div class="container">
+
+
+                <div class="header-top">
+                    <div class="header-top__left">
+                        <div class="icon">
+                            <div class="bgIcon"></div>
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <span>MENU</span>
                     </div>
-                    <span>MENU</span>
+                    <div>
+                        <img src="./asset/images/logo-1.png" alt="">
+                    </div>
+                    <div class="header-top__right">
+                        <div class="icon">
+                            <div class="bgIcon"></div>
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="icon">
+                            <div class="bgIcon"></div>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="icon">
+                            <div class="bgIcon"></div>
+                            <span>VI</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="./asset/images/logo-1.png" alt="">
+                <div class="header-center">
+                    <h3>Chúng tôi luôn cung cấp
+                        <br>những sản phẩm tốt nhất.
+                    </h3>
+                    <button class="btnPrimary">KHÁM PHÁ</button>
                 </div>
-                <div class="header-top__right">
-                    <div class="icon">
-                        <div class="bgIcon"></div>
-                        <i class="far fa-user"></i>
-                    </div>
-                    <div class="icon">
-                        <div class="bgIcon"></div>
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="icon">
-                        <div class="bgIcon"></div>
-                        <span>VI</span>
-                    </div>
+                <div class="header-bottom">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
                 </div>
-            </div>
-            <div class="header-center">
-                <h3>Chúng tôi luôn cung cấp
-                    <br>những sản phẩm tốt nhất.
-                </h3>
-                <button class="btnPrimary">KHÁM PHÁ</button>
-            </div>
-            <div class="header-bottom">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
             </div>
         </div>
 
+
     </header>
-    <div class="gioiThieu">
+    <div class="gioiThieu container">
         <div class="gioiThieu__left">
-            <div>
+            <div class="gioiThieu__left--img">
                 <img src="./asset/images/gioiThieu-1.png" alt="">
+                <img class="img2" src="./asset/images/gioiThieu-3.png" alt="">
+            </div>
+            <div class="img-mobile">
                 <img src="./asset/images/gioiThieu-3.png" alt="">
             </div>
             <div>
-                <img src="./asset/images/gioiThieu-3.png" alt="">
+                <img src="./asset/images/gioiThieu-2.png" alt="">
             </div>
         </div>
         <div class="gioiThieu__right">
@@ -101,21 +112,119 @@
             <span>Tìm hiểu thêm</span><i class="fa fa-arrow-right"></i>
         </div>
     </div>
-    <div class="sanPham">
-        <div class="sanPham__left">
-            <h4>sản phẩm</h4>
-            <h2>Khám phá thêm nhiều những sản phẩm nổi bật.</h2>
-            <p>Chúng tôi đã khai thác nhiều thập kỷ kinh nghiệm và chuyên môn của mình trong lĩnh vực bán buôn tinh dầu
-                thiên nhiên để mang đến cho bạn, khách hàng</p>
-            <span>Khám phá thêm</span><i class="fa fa-arrow-right"></i>
-        </div>
-        <div class="sanPham_Right">
-            <!-- slick slider -->
+    <div class="sanPham-bg ">
+        <div class="container sanPham">
+            <div class="sanPham__left">
+                <h4>sản phẩm</h4>
+                <h2>Khám phá thêm nhiều những sản phẩm nổi bật.</h2>
+                <p>Chúng tôi đã khai thác nhiều thập kỷ kinh nghiệm và chuyên môn của mình trong lĩnh vực bán buôn tinh
+                    dầu
+                    thiên nhiên để mang đến cho bạn, khách hàng</p>
+                <span>Khám phá thêm</span><i class="fa fa-arrow-right"></i>
+            </div>
+            <div class="sanPham__right">
+                <!-- slick slider -->
+                <div class="arrow-prev">
+                    <span><i class="fas fa-arrow-left"></i></span>
+                </div>
+                <div class="arrow-next">
+                    <span><i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="sanPham__slick">
+                    <div class="sanPham__item">
+                        <div class="bgSPItem">
+                            <div class="bgSPItem__head">
+                                <p>SALE</p>
+                            </div>
+                            <div class="bgSPItem__middle">
+                                <img src="./asset//images/sanPham-1.png" alt="">
+                            </div>
+                            <div class="bgSPItem__bottom">
+                                <div>
+                                    <h3>
+                                        Dầu hạt nho Casa
+                                    </h3>
+                                    <p>183.000đ</p>
+                                </div>
+                                <div class="icon">
+                                    <div class="bgIcon"></div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sanPham__item">
+                        <div class="bgSPItem">
+                            <div class="bgSPItem__head">
+                            </div>
+                            <div class="bgSPItem__middle">
+                                <img src="./asset//images/sanPham-2.png" alt="">
+                            </div>
+                            <div class="bgSPItem__bottom">
+                                <div>
+                                    <h3>
+                                        Nước ép Prima
+                                    </h3>
+                                    <p>183.000đ</p>
+                                </div>
+                                <div class="icon">
+                                    <div class="bgIcon"></div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sanPham__item">
+                        <div class="bgSPItem">
+                            <div class="bgSPItem__head">
+                            </div>
+                            <div class="bgSPItem__middle">
+                                <img src="./asset//images/sanPham-3.png" alt="">
+                            </div>
+                            <div class="bgSPItem__bottom">
+                                <div>
+                                    <h3>
+                                        Cá hộp Sardinhas
+                                    </h3>
+                                    <p>183.000đ</p>
+                                </div>
+                                <div class="icon">
+                                    <div class="bgIcon"></div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sanPham__item">
+                        <div class="bgSPItem">
+                            <div class="bgSPItem__head">
+                                <p>SALE</p>
+                            </div>
+                            <div class="bgSPItem__middle">
+                                <img src="./asset//images/sanPham-1.png" alt="">
+                            </div>
+                            <div class="bgSPItem__bottom">
+                                <div>
+                                    <h3>
+                                        Dầu hạt nho Casa
+                                    </h3>
+                                    <p>183.000đ</p>
+                                </div>
+                                <div class="icon">
+                                    <div class="bgIcon"></div>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-    <div class="danhMuc">
+    <div class="danhMuc container">
         <div class="danhMuc__top">
-            <div>
+            <div class="danhMuc__top--content">
                 <h4>danh mục</h4>
                 <h2>Những dòng sản phẩm bạn nên quan tâm.</h2>
             </div>
@@ -123,35 +232,65 @@
                 <span>Xem tất cả</span><i class="fa fa-arrow-right"></i>
             </div>
         </div>
-        <div class="danhMuc_bottom">
-            <div>
-                <div>
-                    <span>Trai Ô Liu</span>
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-                <div>
-                    <span>Trai Ô Liu</span>
-                    <i class="fa fa-arrow-right"></i>
-                </div>
-                <div>
-                    <span>Trai Ô Liu</span>
-                    <i class="fa fa-arrow-right"></i>
+        <div class="danhMuc__bottom">
+            <div class="danhMuc-item">
+                <div class="danhMuc-item--bg">
+                    <img src="./asset/images/danhMuc-1.png" alt="">
+                    <div class="danhMuc-item--content">
+                        <p>Trai Ô Liu</p>
+                        <div class="icon">
+                            <div class="bgIcon"></div>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="bg-blur"></div>
                 </div>
             </div>
+            <div class="danhMuc-item">
+                <div class="danhMuc-item--bg">
+                    <img src="./asset/images/danhMuc-2.png" alt="">
+                    <div class="danhMuc-item--content">
+                        <p>Sữa chua</p>
+                        <div class="icon">
+                            <div class="bgIcon"></div>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="bg-blur"></div>
+                </div>
+            </div>
+            <div class="danhMuc-item">
+                <div class="danhMuc-item--bg">
+                    <img src="./asset/images/danhMuc-3.png" alt="">
+                    <div class="danhMuc-item--content">
+                        <p>Rau củ</p>
+                        <div class="icon">
+                            <div class="bgIcon"></div>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="bg-blur"></div>
+                </div>
+            </div>
+
+
         </div>
     </div>
     <div class="email">
-        <h2>Bạn đang quan tâm đến sản phẩm của chúng tôi?</h2>
-        <p>Hãy để lại Email của bạn. Chúng tôi sẽ liên hệ với bạn sớm nhất để thông báo về những ưu đãi.</p>
-        <form action="">
-            <input type="text">
-            <button>Gửi</button>
-        </form>
+        <div class="email__content">
+            <h2>Bạn đang quan tâm<br> đến sản phẩm của chúng tôi?</h2>
+            <p>Hãy để lại Email của bạn. Chúng tôi sẽ liên hệ với bạn<br>sớm nhất để thông báo về những ưu đãi.</p>
+            <form action="">
+                <input type="text" placeholder="Email">
+                <button class="btnPrimary">Gửi</button>
+            </form>
+        </div>
+
     </div>
-    <div class="tinTuc">
+    <div class="tinTuc container">
         <div class="tinTuc__top">
-            <div>
-                <h4>danh mục</h4>
+            <div class="tinTuc__top--content">
+                <h4>tin tức</h4>
                 <h2>Những dòng sản phẩm bạn nên quan tâm.</h2>
             </div>
             <div>
@@ -159,67 +298,103 @@
             </div>
         </div>
         <div class="tinTuc__bottom">
-            <div>
-                <p>25 SEP, 2021</p>
-                <p>Rockfish với Date Vinaigrette</p>
+            <div class="tinTuc-item">
+                <div class="tinTuc-item--bg">
+                    <img src="./asset/images/tinTuc-1.png" alt="">
+                    <div class="tinTuc-item--content">
+                        <h4>25 SEP, 2021</h4>
+                        <p>Rockfish với Date Vinaigrette</p>
+                    </div>
+                    <div class="bg-blur"></div>
+
+                </div>
             </div>
-            <div>
-                <p>25 SEP, 2021</p>
-                <p>Rockfish với Date Vinaigrette</p>
+            <div class="tinTuc-item">
+                <div class="tinTuc-item--bg">
+                    <img src="./asset/images/tinTuc-2.png" alt="">
+                    <div class="tinTuc-item--content">
+                        <h4>25 SEP, 2021</h4>
+                        <p>Mezzaluna khoai tây tím với dầu ô liu chanh Meyer</p>
+                    </div>
+                    <div class="bg-blur"></div>
+
+                </div>
             </div>
-            <div>
-                <p>25 SEP, 2021</p>
-                <p>Rockfish với Date Vinaigrette</p>
+            <div class="tinTuc-item">
+                <div class="tinTuc-item--bg">
+                    <img src="./asset/images/tinTuc-3.png" alt="">
+                    <div class="tinTuc-item--content">
+                        <h4>25 SEP, 2021</h4>
+                        <p>Sò điệp nướng chảo trái bách xù</p>
+                    </div>
+                    <div class="bg-blur"></div>
+
+                </div>
             </div>
-            <div>
-                <p>25 SEP, 2021</p>
-                <p>Rockfish với Date Vinaigrette</p>
+            <div class="tinTuc-item">
+                <div class="tinTuc-item--bg">
+                    <img src="./asset/images/tinTuc-4.png" alt="">
+                    <div class="tinTuc-item--content">
+                        <h4>25 SEP, 2021</h4>
+                        <p>Phỏng vấn đầu bếp Silvia Barban</p>
+                    </div>
+                    <div class="bg-blur"></div>
+
+                </div>
             </div>
         </div>
     </div>
     <footer>
-        <div>
-            <div>
-                <img src="./asset/images/logo-2.png" alt="">
+        <div class="container footer-content">
+            <div class="footer-item footer-item--1">
+                <div>
+                    <img src="./asset/images/logo-2.png" alt="">
+
+                </div>
                 <div>
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-linkedin-in"></i>
+                    <p>© lamtayfoof. ALL RIGHTS RESERVED.</p>
                 </div>
-                <p>© lamtayfoof. ALL RIGHTS RESERVED.</p>
+
             </div>
-            <div>
+            <div class="footer-item">
                 <h3>Danh mục</h3>
                 <ul>
                     <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
+                    <li>Bơ đậu phộng</li>
+                    <li>Cá hộp</li>
+                    <li>Hải sản</li>
+                    <li>Nước khoáng</li>
+                    <li>Thịt pate</li>
+                    <li>Trai Ô Liu</li>
+                    <li>Thịt bò</li>
                 </ul>
-                <div>
+                <div class="footer-icon">
                     <span>Xem tất cả</span><i class="fa fa-arrow-right"></i>
                 </div>
             </div>
-            <div>
+            <div class="footer-item">
                 <h3>Thông tin hỗ trợ</h3>
                 <ul>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
+                    <li>Về chúng tôi?</li>
+                    <li>Chính sách mua hàng</li>
+                    <li>Chính sách đổi trả</li>
+                    <li>Hướng dẫn mua hàng</li>
+                    <li>Quy định mua hàng</li>
+                    <li>Hướng dẫn thanh toán</li>
+                    <li> Chính sách bảo mật</li>
                 </ul>
 
             </div>
-            <div>
+            <div class="footer-item">
                 <h3>Liên hệ</h3>
                 <ul>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
-                    <li>Bia rượu</li>
+                    <li>Tầng 7, toà nhà Citilight, 45 Võ Thị Sáu,
+                        Phường Đa Kao, Quận 1, TPHCM</li>
+                    <li>T: (888) 832-0051</li>
+                    <li>E: info@gmail.com</li>
                 </ul>
 
             </div>
@@ -237,7 +412,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        $('.say__slick').slick({
+        $('.header__slick').slick({
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -252,6 +427,36 @@
                     }
                 }]
         });
+        $('.sanPham__slick').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            prevArrow: '.arrow-prev',
+            nextArrow: '.arrow-next',
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        // $(function(){
+        //     $('sanPham__slick').slick({
+
+        //     })
+        // })
     </script>
 
 </body>

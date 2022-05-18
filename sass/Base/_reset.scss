@@ -20,3 +20,35 @@ a{
 option{
     max-width: 100%;
 }
+h4 {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #363636;
+    border-left: 3px solid #e0a612;
+    padding-left: 10px;
+}
+h2 {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.03em;
+    margin-top: 20px;
+    color: #000000;
+}
+p {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 36px;
+    color: #696969;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
