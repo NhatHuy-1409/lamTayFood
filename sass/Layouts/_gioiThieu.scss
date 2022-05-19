@@ -1,23 +1,98 @@
+.gioiThieu-bg {
+    position: relative;
+    overflow: hidden;
+    .gioiThieu-blur {
+        position: absolute;
+        top: -28%;
+        right: 0;
+        -webkit-transform: rotate(120deg);
+        transform: rotate(10deg);
+        z-index: -1;
+        opacity: 0.2;
+    }
+}
+
 .gioiThieu {
     display: flex;
     align-items: center;
     padding-top: 140px;
     padding-bottom: 140px;
+
     &__left {
         width: 50%;
         display: flex;
         align-items: center;
-        padding-right: 140px;
-        img {
-            padding: 10px;
+        padding-right: 80px;
+
+        .img2 {
+            float: right;
         }
         .img-mobile {
             display: none;
         }
+        .gioiThieu-item-bg {
+            padding: 10px;
+        }
+        .gioiThieu-item {
+            position: relative;
+            &--content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // transform: translateY(100%);
+                transition: all 0.3s;
+                opacity: 0;
+                z-index: 20;
+                &-1 {
+                    width: 60%;
+                }
+                h5 {
+                    font-size: 24px;
+                    line-height: 35px;
+                    letter-spacing: -0.05em;
+                    color: #ffffff;
+                    font-family: "Sacramento", cursive;
+                }
+                p {
+                    font-size: 17px;
+                    line-height: 21px;
+                    letter-spacing: -0.05em;
+                    color: #ffffff;
+                    margin: 0;
+                }
+                .icon {
+                    @include icon(#000000);
+                    background: #e0a612;
+                    border-radius: 50%;
+                    i{
+                        transform: translate(-40%, -50%);
+                    }
+                }
+            }
+            .bg-blur {
+                @include bgBlur(linear-gradient(180deg, rgba(0, 29, 18, 0) 19.81%, #000000 68.18%));
+                opacity: 0;
+                border-radius: 5px;
+            }
+        }
+        .gioiThieu-item:hover {
+            .gioiThieu-item--content {
+                opacity: 1;
+                // transform: translateY(0);
+            }
+            .bg-blur {
+                @include bgBlur(linear-gradient(180deg, rgba(0, 29, 18, 0) 19.81%, #000000 68.18%));
+                opacity: 1;
+            }
+        }
     }
     &__right {
         width: 50%;
-
         span {
             font-family: "Lexend Deca";
             font-style: normal;
@@ -36,6 +111,32 @@
     .gioiThieu {
         &__left {
             padding-right: 80px;
+            .gioiThieu-item-bg {
+                padding: 5px;
+            }
+            .gioiThieu-item {
+                &--content {
+                    padding: 5px;
+                    &-1 {
+                        width: 60%;
+                    }
+                    h5 {
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                    p {
+                        font-size: 10px;
+                        line-height: 21px;
+                    }
+                    .icon {
+                        width: 20px;
+                        height: 20px;
+                        i {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -45,6 +146,14 @@
         padding-bottom: 80px;
         &__left {
             padding-right: 80px;
+            .gioiThieu-item {
+                &--content {
+                    padding: 5px;
+                    &-1 {
+                        width: 80%;
+                    }
+                }
+            }
         }
         &__right {
             p {
@@ -110,10 +219,17 @@
             }
             img {
                 width: 100%;
-                padding: 5px;
             }
-            div {
+            > div {
                 width: calc(100% / 3);
+            }
+            .gioiThieu-item {
+                &--content {
+                    p {
+                        font-size: 10px;
+                        line-height: 10px;
+                    }
+                }
             }
         }
         &__right {

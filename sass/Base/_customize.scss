@@ -22,6 +22,9 @@ header .slick-dots li.slick-active button:before{
     border: 1px solid #E0A612;
     border-radius: 50%;
 }
+header .slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
 @media screen and (min-width:0px) {
     .container {
         max-width: 100%;

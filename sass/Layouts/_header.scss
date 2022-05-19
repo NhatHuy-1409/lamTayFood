@@ -28,6 +28,19 @@ header {
                 .icon {
                     @include icon(#ffffff);
                 }
+                select{
+                    background: none;
+                    border: none;
+                    outline: none;
+                    color: #ffffff;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-indent: 1px;
+                    option{
+                        color: #000000;
+                    }
+                }
+
             }
         }
 
@@ -62,6 +75,13 @@ header {
     }
 }
 
+@media screen and (min-width: 1450px) {
+    header {
+        .slick-dots{
+            margin-right: 120px;
+        }
+    }
+}
 @media screen and (max-width: 1199px) {
     header {
         .header-content {

@@ -55,8 +55,27 @@ footer {
 }
 @include maxWidth(767px){
     footer {
+        padding-top: 80px;
+        padding-bottom: 70px;
         .footer-content {
-            
+            flex-wrap: wrap;
+            .footer-item {
+                width: 50%;
+                padding: 20px;
+            }
+        }
+    }
+}
+@include maxWidth(415px){
+    footer {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        .footer-content {
+            flex-wrap: wrap;
+            .footer-item {
+                width: 100%;
+                padding: 20px;
+            }
         }
     }
 }

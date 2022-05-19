@@ -6,16 +6,41 @@
 .sanPham {
     display: flex;
     align-items: center;
+    position: relative;
+    .sanPham-blur {
+        position: absolute;
+        top: -17%;
+        left: 2%;
+
+    }
     &__left {
-        width: 40%;
-        padding-right: 140px;
+        width: 33%;
+        padding-right: 100px;
         i {
             color: #e0a612;
             padding-left: 20px;
         }
+        h2 span{
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+            h2{
+                margin-top: 0;
+            }
+        }
+        h2 span:after{
+            content: '';
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            z-index: -2;
+            background: #E0A612;
+        }
     }
     &__right {
-        width: 60%;
+        width: 67%;
         position: relative;
         .arrow-prev {
             width: 50px;
@@ -55,6 +80,7 @@
         }
         .sanPham__item {
             padding: 15px;
+            // width: 300px !important;
             .bgSPItem {
                 background: #ffffff;
                 padding: 15px;
@@ -125,6 +151,9 @@
     .sanPham {
         display: flex;
         align-items: center;
+        .sanPham-blur{
+            top: 0;
+        }
         &__left {
             width: 40%;
             padding-right: 60px;
@@ -161,13 +190,42 @@
                 line-height: 40px;
                 margin-top: 10px;
             }
-            span{
+            span {
                 font-size: 15px;
             }
         }
         &__right {
             width: 100%;
-
+            .sanPham__item {
+                .bgSPItem {
+                    height: 300px;
+                    &__head{
+                        p{
+                            margin: 0;
+                        }
+                    }
+                    &__middle {
+                        height: 150px;
+                        img {
+                            max-height: 100%;
+                        }
+                    }
+                    &__bottom {
+                        align-items: center;
+                        p {
+                            margin: 0;
+                        }
+                        h3 {
+                            font-size: 13px;
+                            line-height: 15px;
+                        }
+                        .icon{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -176,5 +234,4 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
 }

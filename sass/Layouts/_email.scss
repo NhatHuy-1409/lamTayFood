@@ -1,3 +1,19 @@
+.email-bg {
+    position: relative;
+    overflow: hidden;
+    .email-blur-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+    }
+    .email-blur-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+}
 .email {
     background-color: #f4f4f1;
     padding-top: 100px;
@@ -5,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__content {
         width: 50%;
         text-align: center;
@@ -28,8 +45,8 @@
     }
 }
 
-@include maxWidth(991px){
-    .email{
+@include maxWidth(991px) {
+    .email {
         padding-top: 60px;
         padding-bottom: 80px;
         &__content {
@@ -37,17 +54,17 @@
         }
     }
 }
-@include maxWidth(767px){
-    .email{
+@include maxWidth(767px) {
+    .email {
         padding-top: 60px;
         padding-bottom: 80px;
         &__content {
             width: 60%;
-            h2{
+            h2 {
                 font-size: 27px;
                 line-height: 40px;
             }
-            p{
+            p {
                 line-height: 20px;
                 margin-top: 10px;
                 margin-bottom: 10px;
@@ -59,17 +76,17 @@
         }
     }
 }
-@include maxWidth(575px){
-    .email{
+@include maxWidth(575px) {
+    .email {
         padding-top: 0;
         padding-bottom: 20px;
         &__content {
             width: 80%;
-            h2{
+            h2 {
                 font-size: 27px;
                 line-height: 40px;
             }
-            p{
+            p {
                 line-height: 20px;
                 margin-top: 10px;
                 margin-bottom: 10px;
@@ -79,6 +96,9 @@
                 padding: 10px 20px;
                 font-size: 13px;
                 margin-top: 15px;
+            }
+            form input {
+                width: 250px;
             }
         }
     }
