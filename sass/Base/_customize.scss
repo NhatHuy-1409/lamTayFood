@@ -17,10 +17,12 @@ header .slick-dots li button:before{
     width: 16px;
     height: 16px;
 }
+
 header .slick-dots li.slick-active button:before{
     color: #E0A612 ;
-    border: 1px solid #E0A612;
+    // border: 1px solid #E0A612;
     border-radius: 50%;
+    outline: 1px solid #E0A612;
 }
 header .slick-dotted.slick-slider{
     margin-bottom: 0;

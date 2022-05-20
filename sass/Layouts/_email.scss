@@ -26,6 +26,8 @@
         width: 50%;
         text-align: center;
         form {
+            position: relative;
+            z-index: 2;
             input {
                 display: block;
                 margin: auto;
@@ -34,6 +36,7 @@
                 border: none;
                 outline: none;
                 padding: 10px;
+
                 &::placeholder {
                     font-weight: 300;
                     font-size: 17px;
@@ -46,6 +49,14 @@
 }
 
 @include maxWidth(991px) {
+    .email-bg {
+        .email-blur-1 {
+            width: 40%;
+        }
+        .email-blur-2 {
+            width: 40%;
+        }
+    }
     .email {
         padding-top: 60px;
         padding-bottom: 80px;
@@ -60,16 +71,6 @@
         padding-bottom: 80px;
         &__content {
             width: 60%;
-            h2 {
-                font-size: 27px;
-                line-height: 40px;
-            }
-            p {
-                line-height: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                font-size: 14px;
-            }
             .btnPrimary {
                 margin-top: 20px;
             }
@@ -82,16 +83,11 @@
         padding-bottom: 20px;
         &__content {
             width: 80%;
-            h2 {
-                font-size: 27px;
-                line-height: 40px;
-            }
-            p {
-                line-height: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                font-size: 14px;
-            }
+            // h2 {
+            //     font-size: 27px;
+            //     line-height: 40px;
+            // }
+
             .btnPrimary {
                 padding: 10px 20px;
                 font-size: 13px;

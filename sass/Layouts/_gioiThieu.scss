@@ -69,6 +69,8 @@
                     @include icon(#000000);
                     background: #e0a612;
                     border-radius: 50%;
+                    margin-right: 0;
+                    outline: 10px solid #e0a6123b;
                     i{
                         transform: translate(-40%, -50%);
                     }
@@ -141,6 +143,11 @@
     }
 }
 @media screen and (max-width: 991px) {
+    .gioiThieu-bg {
+        .gioiThieu-blur {
+            width: 40%;
+        }
+    }
     .gioiThieu {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -155,11 +162,6 @@
                 }
             }
         }
-        &__right {
-            p {
-                line-height: 32px;
-            }
-        }
     }
 }
 @media screen and (max-width: 800px) {
@@ -168,9 +170,9 @@
             padding-right: 50px;
         }
         &__right {
-            p {
-                line-height: 25px;
-            }
+            // p {
+            //     line-height: 25px;
+            // }
             h2 {
                 font-size: 32px;
                 line-height: 40px;
@@ -178,23 +180,10 @@
         }
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .gioiThieu {
         &__left {
             padding-right: 30px;
-        }
-        &__right {
-            p {
-                line-height: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                font-size: 14px;
-            }
-            h2 {
-                font-size: 27px;
-                line-height: 40px;
-                margin-top: 10px;
-            }
         }
     }
 }
@@ -205,6 +194,7 @@
         padding-bottom: 20px;
         &__left {
             display: flex;
+            flex-wrap: wrap;
             width: 100%;
             padding-right: 0;
             margin: 20px 0;
@@ -221,30 +211,29 @@
                 width: 100%;
             }
             > div {
-                width: calc(100% / 3);
+                width: 90%;
+                margin: auto;
             }
             .gioiThieu-item {
                 &--content {
+                    padding: 20px;
                     p {
-                        font-size: 10px;
-                        line-height: 10px;
+                        font-size: 17px;
+                        line-height: 21px;
+                    }
+                    h5 {
+                        font-size: 25px;
+                        line-height: 35px;
+                    }
+                    .icon{
+                        width: 40px;
+                        height: 40px;
                     }
                 }
             }
         }
         &__right {
             width: 100%;
-            p {
-                line-height: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                font-size: 14px;
-            }
-            h2 {
-                font-size: 27px;
-                line-height: 40px;
-                margin-top: 10px;
-            }
         }
     }
 }

@@ -23,6 +23,7 @@
                 .bg-blur{
                     @include bgBlur(linear-gradient(180deg, rgba(0, 0, 0, 0) 27.54%, #000000 100%));
                     opacity: 1;
+                    border-radius: 5px;
                 }
             }
             &--content {
@@ -89,10 +90,10 @@
         &__top {
             &--content {
                 width: 60%;
-                h2{
-                    font-size: 27px;
-                    line-height: 40px;
-                }
+                // h2{
+                //     font-size: 27px;
+                //     line-height: 40px;
+                // }
 
             }
             span{
@@ -119,31 +120,42 @@
 @media screen and (max-width: 575px) {
     .danhMuc {
         &__top {
+            flex-wrap: wrap;
             &--content {
-                width: 60%;
+                width: 100%;
             }
+            margin-bottom: 10px;
         }
         padding-top: 20px;
         padding-bottom: 20px;
         &__bottom {
-    
+            flex-wrap: wrap;
             .danhMuc-item {
-                padding: 10px;
+                padding: 0;
+                width: 90%;
+                margin: auto;
+                padding-bottom: 10px;
                 &--content {
-                    padding: 4px;
+                    padding: 10px;
                     p {
-                        font-size: 12px;
-                        line-height: 0px;
+                        font-size: 17px;
+                        line-height: 21px;
                         margin: 0;
                     }
                     .icon {
-                        width: 20px;
-                        height: 20px;
+                        width: 40px;
+                        height: 40px;
                         i{
                             font-size: 10px;
                         }
                     }
                 }
+            }
+            .danhMuc-item:first-of-type{
+                padding-left: 0;
+            }
+            .danhMuc-item:last-of-type{
+                padding-right: 0;
             }
         }
     }

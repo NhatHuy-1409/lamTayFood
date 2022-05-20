@@ -1,23 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-    font-size:17px ;
+html,
+body {
+    font-size: 17px;
     font-family: $font-primary;
 }
 img {
     display: block;
     max-width: 100%;
+    width: 100%;
 }
 li {
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
 }
-option{
+a:hover {
+    text-decoration: none;
+}
+option {
     max-width: 100%;
 }
 h4 {
@@ -51,4 +56,38 @@ p {
     color: #696969;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@include maxWidth(1199px) {
+}
+@include maxWidth(991px) {
+    p {
+        line-height: 32px;
+    }
+}
+@include maxWidth(767px) {
+    p {
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 27px;
+        line-height: 40px;
+        // margin-top: 10px;
+    }
+}
+@include maxWidth(575px) {
+    p {
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 27px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
 }
